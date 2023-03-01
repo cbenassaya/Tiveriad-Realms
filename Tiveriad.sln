@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{7A515D50-F357-4BF3-8DCF-18F94FEF8B32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiveriad.Realms.Apis", "Components\Tiveriad.Realms.Apis\Tiveriad.Realms.Apis.csproj", "{D10AC334-876D-47A9-9814-A3925C54504E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiveriad.Realms.Core", "Components\Tiveriad.Realms.Core\Tiveriad.Realms.Core.csproj", "{6BA74038-CC93-4187-8D09-BD850F33872B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiveriad.Realms.Applications", "Components\Tiveriad.Realms.Applications\Tiveriad.Realms.Applications.csproj", "{45BA8593-416D-4809-A8C0-0AB1239D9F58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiveriad.Realms.Infrastructure", "Components\Tiveriad.Realms.Infrastructure\Tiveriad.Realms.Infrastructure.csproj", "{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiveriad.Realms.Persistence", "Components\Tiveriad.Realms.Persistence\Tiveriad.Realms.Persistence.csproj", "{C8A7F265-B768-41CB-A38C-F526CA860A33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D10AC334-876D-47A9-9814-A3925C54504E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10AC334-876D-47A9-9814-A3925C54504E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10AC334-876D-47A9-9814-A3925C54504E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10AC334-876D-47A9-9814-A3925C54504E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA74038-CC93-4187-8D09-BD850F33872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA74038-CC93-4187-8D09-BD850F33872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA74038-CC93-4187-8D09-BD850F33872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA74038-CC93-4187-8D09-BD850F33872B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BA8593-416D-4809-A8C0-0AB1239D9F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BA8593-416D-4809-A8C0-0AB1239D9F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BA8593-416D-4809-A8C0-0AB1239D9F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BA8593-416D-4809-A8C0-0AB1239D9F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A7F265-B768-41CB-A38C-F526CA860A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A7F265-B768-41CB-A38C-F526CA860A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A7F265-B768-41CB-A38C-F526CA860A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A7F265-B768-41CB-A38C-F526CA860A33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D10AC334-876D-47A9-9814-A3925C54504E} = {7A515D50-F357-4BF3-8DCF-18F94FEF8B32}
+		{6BA74038-CC93-4187-8D09-BD850F33872B} = {7A515D50-F357-4BF3-8DCF-18F94FEF8B32}
+		{45BA8593-416D-4809-A8C0-0AB1239D9F58} = {7A515D50-F357-4BF3-8DCF-18F94FEF8B32}
+		{0B47FD6C-ED28-4405-905B-2FC7F9C17E7D} = {7A515D50-F357-4BF3-8DCF-18F94FEF8B32}
+		{C8A7F265-B768-41CB-A38C-F526CA860A33} = {7A515D50-F357-4BF3-8DCF-18F94FEF8B32}
+	EndGlobalSection
+EndGlobal
