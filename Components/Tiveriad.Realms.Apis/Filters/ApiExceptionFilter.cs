@@ -13,8 +13,10 @@ public class ApiExceptionFilter : IAsyncExceptionFilter
             context.HttpContext.RequestServices.GetService(typeof(ILogger<ApiExceptionFilter>)) as
                 ILogger<ApiExceptionFilter>;
 
-
-        logger?.LogError(context.Exception.Message, context.Exception, context.HttpContext.Request);
+        var message = context.Exception.InnerException!=null
+            ? context.Exception.InnerException.Message
+            : context.Exception.Message;
+        logger?.LogError(message, context.Exception, context.HttpContext.Request);
 
         if (multiTenancyException != null)
 
