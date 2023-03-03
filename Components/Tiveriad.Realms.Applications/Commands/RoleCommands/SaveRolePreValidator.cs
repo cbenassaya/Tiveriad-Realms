@@ -2,6 +2,8 @@ using FluentValidation;
 using Tiveriad.Repositories;
 using Tiveriad.Realms.Core.Entities;
 using System;
+using System.Data;
+using FluentValidation.Results;
 
 namespace Tiveriad.Realms.Applications.Commands.RoleCommands;
 public class SaveRolePreValidator : AbstractValidator<SaveRoleRequest>
@@ -12,5 +14,16 @@ public class SaveRolePreValidator : AbstractValidator<SaveRoleRequest>
     {
         _roleRepository = roleRepository;
         _moduleRepository = moduleRepository;
+
+        RuleFor(x => x.Role.Name).NotEmpty();
+        RuleFor(x => x.Role).Must(NameUniqued);
     }
+    
+    
+    private bool NameUniqued(Role value)
+    {
+        return !_roleRepository.Find(x => x.Name == value.Name && x.Id != value.Id).Any();
+    }
+
+
 }
